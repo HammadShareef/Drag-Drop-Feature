@@ -1,0 +1,20 @@
+<!-- <mat-card>
+    <div class="alert alert-info">
+      <strong>Drag and Drop with Horizontal Orientation</strong>
+    </div>
+    <div class="example-container mat-elevation-z8">
+        <div class="box-list-horizontal" cdkDropList cdkDropListOrientation="horizontal" class="example-list" (cdkDropListDropped)="drop($event)">
+        <div class="example-box" *ngFor="let item of items" cdkDrag>{{item}}</div>
+      </div>
+    </div>
+  </mat-card> -->
+  <mat-card >
+      <div class="alert alert-info">
+          <strong>Drag and Drop with Horizontal Orientation</strong>
+        </div>
+        <div class="example-container mat-elevation-z8" >
+  <div cdkDropList cdkDropListOrientation="horizontal"  class="example-list" (cdkDropListDropped)="drop($event)">
+      <div class="example-box" *ngFor="let timePeriod of items" cdkDrag >{{timePeriod}}</div>
+    </div>
+  </div>
+  </mat-card>

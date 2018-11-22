@@ -1,0 +1,10 @@
+<mat-card>
+  <div class="alert alert-info">
+    <strong>Drag and Drop with Sorting</strong>
+  </div>
+  <div class="example-container mat-elevation-z8">
+    <div cdkDropList class="example-list" (cdkDropListDropped)="drop($event)">
+      <div class="example-box" *ngFor="let item of items" cdkDrag>{{item}}</div>
+    </div>
+  </div>
+</mat-card>
